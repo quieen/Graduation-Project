@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root{
+    --white: #fff;
+    --light: #eeeded;
+    --orange: #0c6980;
+}
+body{
+    background-color: var(--orange);
+    font-family: system-ui;
+    overflow: hidden;
+}
+.container{
+    width:auto;
+    border:1px solid var(--white);
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 200px auto 300px;
+    padding:20px;
+    border-radius: 30px;
+    min-height: 80vh;
+}
+.container .menu{
+    background-color: var(--white);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+}
+.container .cart{
+    background-color: var(--white);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.container .center{
+    background-color: var(--light);
+    border-left: 1px solid var(--light);
+    border-right: 1px solid var(--light);
+    width: 122%;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+/* menu */
+.menu .logo{
+    padding:20px;
+    font-family: 'Lobster', cursive;
+    font-size: xx-large;
+    height:40px;
+    border-bottom: 1px solid var(--light);
+}
+.menu .logo span{
+    color: var(--orange);
+    font-size: 27px;
+}
+.menu ul{
+    padding:20px 0 20px 20px;
+    list-style: none;
+    /* border-bottom: 1px solid var(--light); */
+}
+.menu ul li{
+    padding:10px 0;
+}
+.menu ul li i{
+    margin-right: 12px;
+}
+.menu ul li a.active{
+    color: var(--orange);
+    border-right: 2px solid var(--orange);
+}
+.menu ul li:hover{
+    color: var(--orange);
+    border-right: 2px solid var(--orange);
+    background-color: #ccc;
+}
+.menu ul li i a{
+    color: black;
+
+}
+/* end menu */
+/* center */
+    /* form */
+
+/* DHT11 */
+.container .center h2{
+    font-size: 27px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 20px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin-left: 100px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 0.5em;
+    overflow: hidden;
+    width: 85%;
+    height: 70%;
+  }
+
+  .styled-table thead tr {
+    background-color: #0c6980;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .styled-table th {
+    padding: 12px 15px;
+    text-align: left;
+  }
+
+  .styled-table td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  .styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+  }
+
+  .bdr {
+    border-right: 1px solid #e3e3e3;
+    border-left: 1px solid #e3e3e3;
+  }
+  
+  td:hover {background-color: rgba(12, 105, 128, 0.21);}
+  tr:hover {background-color: rgba(12, 105, 128, 0.15);}
+  .styled-table tbody tr:nth-of-type(even):hover {background-color: rgba(12, 105, 128, 0.15);}
+  /* ----------------------------------- */
+  
+  /* ----------------------------------- BUTTON STYLE */
+
+  .btn-group{
+    margin-left: 150px;
+  }
+  .btn-group .button {
+    background-color: #0c6980; /* Green */
+    border: 1px solid #e3e3e3;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+    
+  }
+
+  .btn-group .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+
+  .btn-group .button:hover {
+    background-color: #094c5d;
+  }
+
+  .btn-group .button:active {
+    background-color: #0c6980;
+    transform: translateY(1px);
+  }
+
+  .btn-group .button:disabled,
+  .button.disabled{
+    color:#fff;
+    background-color: #a0a0a0; 
+    cursor: not-allowed;
+    pointer-events:none;
+  }
